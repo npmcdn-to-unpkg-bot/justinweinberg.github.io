@@ -1,0 +1,557 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>Code Confessions</title>
+    <link>http://www.codeconfessions.com/</link>
+    <atom:link href="/rss/index.xml" rel="self" type="application/rss+xml"/>
+    
+    <description>Thoughts on architecture, code, and technology.   My name is Justin Weinberg and I lead the digital innovation team at Essilor.</description>
+    <pubDate>Sun, 28 Aug 2016 23:10:47 GMT</pubDate>
+    <generator>http://hexo.io/</generator>
+    
+    <item>
+      <title>SMU Distributed Architecture Talk</title>
+      <link>http://www.codeconfessions.com/posts/2013/11/smu-distributed-architecture-talk/</link>
+      <guid>http://www.codeconfessions.com/posts/2013/11/smu-distributed-architecture-talk/</guid>
+      <pubDate>Tue, 12 Nov 2013 22:22:17 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I spoke yesterday on Distributed architecture at SMU. The audience was college students who hadn’t encountered distributed architecture b
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I spoke yesterday on Distributed architecture at SMU. The audience was college students who hadn’t encountered distributed architecture before so I took it from “what is architecture” to some basic patterns.</p>
+<p>Slides available here</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2013/11/smu-distributed-architecture-talk/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>North Dallas .NET Kinect Talk</title>
+      <link>http://www.codeconfessions.com/posts/2012/06/nddnug-kinect-talk/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/06/nddnug-kinect-talk/</guid>
+      <pubDate>Tue, 12 Jun 2012 21:22:17 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Yesterday I had the pleasure of speaking about the Kinect for the fifth time, this time at the North Dallas .NET User Group. NDDNUG is a great group. Even with it pouring outside, we had a decent turnout.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Yesterday I had the pleasure of speaking about the Kinect for the fifth time, this time at the North Dallas .NET User Group. NDDNUG is a great group. Even with it pouring outside, we had a decent turnout.<a id="more"></a></p>
+<p>This was the first time since the 1.0 release I’ve presented on it.  What I didn’t expect was how much shorter my presentation was due to how much work has gone into simplifying the .NET Kinect development experience.  Bit twiddling on depth, MTA’s, DMOs, and much more are just gone from the experience.  The team deserves some serious kudos for this.</p>
+<p>The timing was auspicious. The Kinect 1.5 SDK includes many new features:</p>
+<p>Face Tracking. This is huge for those trying to do animated films on the cheap. This will map a person’s eyebrows, mouth position and more onto a 3D mesh. You smile and your puppet self will smile.</p>
+<p>Kinect Studio. Record and playback of Kinect data (No more jumping up and down just to write software.. though this was great exercise). This is going to make debugging key scenarios much easier.<br>Seated skeletal tracking. Seated skeletons will no longer dissolve into painful yoga poses.</p>
+<p>Joint Orientation. The Kinect can tell you about rotated joints such as the rotation of the wrist. Good for playing twister and revving virtual motorcycles!<br>Improved green screen effect (mapping RGB to depth) most noticeable in the speed of tracking (from about 10ms to 2ms), though it still comes with a halo of noise.</p>
+<p>Additional languages for speech recognition.</p>
+<p>For new users and old, the quality of the Kinect developer samples and especially the Kinect Explorer (the key sample application to demonstrate Kinect features) have been greatly improved. Also released is a well written Human Interface Guidelines document. This 70 page PDF gives insight into good Kinect HCI for both audio and kinetic inputs. It also lends a domain language with which to discuss Kinect. What the guide doesn’t do is give technical details on how to develop gestures.</p>
+<p>Developers are still hoping a gesture recognition and possibly a facial recognition SDK are in the works, but there isn’t a clear indication if these are in the works.</p>
+<p>A couple people asked me about slides and code. Code is available on <a href="https://bitbucket.org/codeconfessions/kinect-examples/" target="_blank" rel="external">bitbucket</a> and slides are <a href="http://www.slideshare.net/JustinWeinberg/connect-with-your-kinect" target="_blank" rel="external">here</a>.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/06/nddnug-kinect-talk/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Windows 8</title>
+      <link>http://www.codeconfessions.com/posts/2012/05/thoughts-on-windows-8/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/05/thoughts-on-windows-8/</guid>
+      <pubDate>Sat, 19 May 2012 23:21:23 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I’ll admit it.  I’m a fan of Windows.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I’ll admit it.  I’m a fan of Windows.<a id="more"></a>  I want Windows to continue to flourish. I actually hope Metro catches fire, but I have some reservations.</p>
+<p>I’m sure to Microsoft the problem seems insurmountable (Apple’s market and mind share, the rising tablet market, the sad rate of Windows Phone sales) and I understand trying to take it in a different direction. I also understand that moving a ship like the Microsoft Windows team must be near impossible since the design and development cycles started years ago. Yet every day I see more MacBooks than PCs at coffee shops. PCs still rule the enterprise, but “I”devices are making in roads. And almost worse, it looks like Apple may be about to take on the XBox.</p>
+<p>But we have to ask something realistic here. If Metro is failing to sell on the Windows phone (which I own and use daily), why does Microsoft believe it will succeed on tablets? And why would it succeed on a laptop or desktop for which it isn’t the optimized experience?</p>
+<p>I’m not an award winning designer but I think I have some good insight. Here’s where I think things went awry.</p>
+<h2 id="Windows-8-misinterprets-telemetry-data"><a href="#Windows-8-misinterprets-telemetry-data" class="headerlink" title="Windows 8 misinterprets telemetry data."></a>Windows 8 misinterprets telemetry data.</h2><p>In WW2 the English started a program to analyze aircraft to figure out where they needed to add armor. They looked at all of the planes coming back and did frequency analysis of where the bullet holes were. Some areas were so riddled that easily 60% of bullet holes hit these key areas.</p>
+<p>The first reaction is to armor these heavily hit areas of the plane. This is wrong. These planes survived. The armor should go everywhere else.</p>
+<p>In a similar manner MS is collecting telemetry data from customers who have “come back” and deciding based on their usage patterns to change the product. This is wrong. MS needs to understand the ones who left for other operating systems and understand why they left.</p>
+<h2 id="Windows-8-underestimates-the-value-of-familiarity"><a href="#Windows-8-underestimates-the-value-of-familiarity" class="headerlink" title="Windows 8 underestimates the value of familiarity."></a>Windows 8 underestimates the value of familiarity.</h2><p>People tell me OSX is beautiful. I think that’s rubbish. Have you seen the big ugly white toolbar at the top from circa 1990? Microsoft long ago did away with such things in their office products by replacing with the ribbon.</p>
+<p>And let’s look at the IPad. Just take a phone and “make it big”? Surely this would be a recipe for failure..</p>
+<p>Yet OSX market share continues to explode despite the big ugly menu bar. IPad sales couldn’t be hotter. Mac customers are repeat customers.</p>
+<p>Apple isn’t very “innovative” – quite the opposite. They do one or two big innovations and then they find something that works and keep at it until everyone agrees. Many people still hate the ribbon (of course telemetry data says otherwise because many office users switched to Mac where they get to keep their ugly but familiar toolbars and menus). Even if the ribbon surfaces more commands, it’s jarring for users who are attuned to a product. Better would have been a search box.</p>
+<p>Don’t underestimate the power of familiarity and muscle memory. I still “save” by hitting ALT-F and S. It’s inefficient. I know CTRL S is better. But I’ve been doing it that way for so many years, it’s a habit.</p>
+<p>People hit the Start button and have an expectation based on over 15 years of familiarity. Some will be flexible and accept this significant change. Others will be very confused, so much so that they may think the PC is “broken” and they will want it “the old way”. When this starts happening PC makers will start offering Windows 7 instead of 8.</p>
+<h2 id="Windows-8-devalues-consistency"><a href="#Windows-8-devalues-consistency" class="headerlink" title="Windows 8 devalues consistency"></a>Windows 8 devalues consistency</h2><p>MS is betting that people want one device, not two. In some ways they are right. Most people I know (yes this is just my experience) want one device. But they want either a tablet or a laptop. The problem is the use cases are different. To try to put them in the same operating system gives us an OS with split brain syndrome. People want consistency.</p>
+<p>Consistency is why the office ribbon was a bad idea. For each program, users must learn something new. Even the size of things aren’t consistent and the layout is haphazard. With menus you can easily read what you are trying to do. With toolbars, icon sizes are consistent and easier to scan. Yes, menus and toolbars and launch bars and start buttons don’t “surface” commands well – but there are other ways to handle this then to throw everything the user could possible need on the screen.</p>
+<p>In the metro start menu, the only consistent motif is the rectangle. It’s why tiles are a bad idea. Metro tiles don’t promote mental mapping. From cognitive science we know we can only contain 7 +/- 2 things at a time unless we “chunk”. Chunking in Metro involves a sea of tiles grouped by spacing. This is why folders are so valuable. The Metro tiles are akin to taking your filing cabinet and dumping their contents on your desk.</p>
+<p>Windows 7 was universally praised. Why loose that momentum? It seems more sensible to release Windows 8 as a tablet only release and “wait and see” before trying to use it in the enterprise.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/05/thoughts-on-windows-8/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Beyond Entities</title>
+      <link>http://www.codeconfessions.com/posts/2012/05/udi-soa-beyond-entities/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/05/udi-soa-beyond-entities/</guid>
+      <pubDate>Wed, 16 May 2012 23:20:29 GMT</pubDate>
+      <description>
+      
+        Not everything fits nicely into the relational model.  Modeling businesses requires us to fit the best abstraction to the problem.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>For decades enterprises have understood the database as the true technical authority.<a id="more"></a>  No matter what insanity we application developers create, the relational database, by enforcing constraints and referential consistency, by disallowing nulls and protecting unique values with its transactions and ACID principles – it keeps the chaos at bay and gives us Truth.</p>
+<p>But nothing is free. Requiring all domain truth to be expressible with a single model, the relational entity store, is like painting the world with only primary colors. The subtleness of the domain is lost. Meaningful questions are obscured by the checklist of entity relational questions. Should the customer’s name be 50 characters or 100 characters? Should it be non nullable? In what aggregate does it belong? These questions hide more important question – What is the purpose of this data to the enterprise? In what context is it valuable?</p>
+<p>Entities come with baggage. They stop us from thinking YAGNI at an architectural level. If we don’t need the data, we shouldn’t persist it. If we don’t need an event, we shouldn’t publish it. If a tree falls in the forest, unless it serves a purpose in the forest service business capability, it will not publish a sound event.</p>
+<p>The hardest part of SOA is getting past our preconceived notions of what business is all about. We have them at many levels. We have baked them into relational databases and we have “anemic domain” models in our heads from years of repetitive system design. </p>
+<p>To get SOA right, we first have to get over ourselves.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/05/udi-soa-beyond-entities/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>What&#39;s a Service</title>
+      <link>http://www.codeconfessions.com/posts/2012/05/udi-soa-what-is-a-service/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/05/udi-soa-what-is-a-service/</guid>
+      <pubDate>Tue, 08 May 2012 23:17:56 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;In Udi’s service oriented architecture, services should align with and enforce enterprise semantics
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>In Udi’s service oriented architecture, services should align with and enforce enterprise semantics <a id="more"></a> and rules instead of tangentially relate to them like applications tend to do.</p>
+<p>This brings me to <a href="http://www.udidahan.com/2010/11/15/the-known-unknowns-of-soa/" target="_blank" rel="external">Udi’s definition of a service</a> which works well with my preferred definition of SOA:</p>
+<p>A service is the technical authority over a specific business capability. Any piece of data or rule must be owned by only one service. – Udi Dahan</p>
+<p>“Technical authority” is intentionally strong. To be an authority means to have power of determination.</p>
+<p>An authoritative service owns completely its data, its schema, and its concept of consistency. No outside force may tell a service what is true inside its boundary For example, enforcing referential consistency in a database across services is disallowed; This impedes on the technical authority of the service over its data.</p>
+<p>A service also owns its business rules. To own a rule, a service must be able to change its interpretation of a rule without “issuing a memo”. Other services shouldn’t be affected by this change. This is stronger than loosely coupled – this is autonomous.</p>
+<p>To be autonomous as <a href="http://www.udidahan.com/2006/01/08/autonomous-services-a-step-beyond-service-orientation/" target="_blank" rel="external">discussed in this blog post</a> requires services to communicate asynchronously. If services make synchronous calls we have created strong temporal coupling between our services.</p>
+<p>A more surprising takeaway of being a technical authority is that services must own their presentation elements. This means our applications will decouple orthogonally instead of horizontally as services will bundles data, schema, business rules and presentation elements together.</p>
+<p>Providing presentation elements isn’t the same as a full blown stylized UI; A separate branding service is responsible for that. Instead, services emit a small amount of HTML or JSON or own an MVC controller. This is controversial as horizontally decoupling has been beaten into our skull for so many years. But it makes sense if services have been constructed at the right level of granularity.</p>
+<p>With almost territorial delineation between services, how do we build applications? Udi notes in <a href="http://www.udidahan.com/2010/11/15/the-known-unknowns-of-soa/" target="_blank" rel="external">this blog post</a> that applications are simply mashups of autonomous services. Applications are loosely communicating context aware services. The job of applications is to provide context to services.</p>
+<p>Udi didn’t cover why he chose the specific language of business capability instead of the more familiar business process. Business capabilities describe what a business does – the functions that a business performs (use cases at a high level). Processes, on the other hand, define how a business operates and are anchored in today’s thinking about the business. For example, a business capability might be “Generate Bill”. The specifics of how a bill is generated – whether we create a PDF or generate an email, is the process.</p>
+<p>Sounds great, but if we don’t create code that actually does Print PDFs or send emails, nothing gets implemented. So why capabilities? Because they maps well to services. A capability is at the right level of granularity to be represented with a service. Capabilities are black boxes that encapsulate the processes they perform. Services are the same, sharing minimally and to observers (if constructed correctly) autonomous black boxes of functionality. Capabilities are stable over time. For our investment in services to be valuable, they too must be stable over time. The implementation can change as the environment and organizations changes, but services boundaries need not be redefined, just as the core business capabilities rarely need be redefined.</p>
+<p>Now that we have a good idea of what we want out of our services, we can start talking about the moving parts that make all of this SOA machinery work.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/05/udi-soa-what-is-a-service/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Understanding SOA</title>
+      <link>http://www.codeconfessions.com/posts/2012/05/udi-soa-defining-soa/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/05/udi-soa-defining-soa/</guid>
+      <pubDate>Wed, 02 May 2012 23:13:13 GMT</pubDate>
+      <description>
+      
+        To grock Udi&#39;s definition of Service Oriented Architecture requires a paradigm shift.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>To learn something complex and paradigm shifting like service oriented architecture (SOA) can be tough. It’s doubly difficult when there is little agreement on what the definition of the thing being learned is.</p>
+<p>If you look into its earliest history, SOA is usually defined in terms of specific technical stacks such as SOAP. The W3 <a href="http://www.w3.org/TR/ws-arch/wsa.pdf" target="_blank" rel="external">penned a more general definition when it defined SOA</a>. The W3 discusses the desirable characteristics of SOA such as exposing metadata, network friendly, and platform neutrality.</p>
+<p>My problem with these (and many) definitions of SOA is they lean too technical. If SOA is just another technical stack, it’s not an architecture, it’s an implementation.</p>
+<p>The definition of SOA I found which I like the most is from an article by Boris Lublinsky. it states that:</p>
+<blockquote>
+<p>SOA can be defined as an architectural style promoting the concept of business-aligned enterprise service as the fundamental unit of designing, building, and composing enterprise business solutions. Multiple patterns, defining design, implementations, and deployment of the SOA solutions, complete this style – Boris Lublinsky</p>
+</blockquote>
+<p>What I like best about this definition is the emphasis on services as a unit of business alignment.</p>
+<p>According to Boris, because of the way IT needs are addressed, the enterprise becomes a mesh of siloed applications, each created with only partial business alignment. Enterprise business processes becomes shaded by application specific purposes. According to the article applications “manifest themselves as islands of data and islands of automation.”</p>
+<p>Islands of data develop when enterprise concepts are defined narrowly to meet specific application needs. These islands of data cause semantic dissonance as each application models a tiny, discolored slice of the enterprise concept. Such islands results in difficult to reconcile data duplication between applications. For example, an insurance claims application may contain demographics in a different format then a CRM application. They may be similar but not the same.</p>
+<p>Islands of automation are the applications themselves. These force enterprise users to “application hop” in order to complete meaningful work. Business processes become disjointed, often requiring users to copy and paste between applications or invoke multiple executables or web sites to perform work. This context switching costs the enterprise in terms of lost time, concentration, and duplication of efforts.</p>
+<p>SOA then, as an architectural style, should strive to end semantic dissonance in the enterprise and bring about business alignment. SOA should tear apart application islands in order to reconstruct the enterprise as a series of autonomous services, each with clear ownership and responsibility for its semantic concepts and business rules.</p>
+<p>This means if we want to do more than pay lip service to SOA we’re going to have to cause some enterprise pain. According to <a href="http://en.wikipedia.org/wiki/Conway&#39;s_law" target="_blank" rel="external">Conway’s law</a> the enterprise will produce designs which are copies of the communication structures of these organizations.</p>
+<p>This means if we have four teams bent on doing SOA but projects are divided up around existing application silos, we’ll just get four additional silo applications. According to Conway, if we divide IT by technical lines (Development, Management, Support, Help Desk) we will find each group acting autonomously and aligning along technical boundaries rather than business aligned service boundaries.</p>
+<p>If we want to do SOA with a capital S and reap all of its rewards, we must accept it will involve changes to IT. How projects are conceived and budgeted, how teams are formed, even the very structure of IT governance will need to be examined.</p>
+<p>Next time we will discuss Udi’s definition of a service and how it is critical to a successful SOA.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/05/udi-soa-defining-soa/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Distributed Computing: The 11th Fallacy</title>
+      <link>http://www.codeconfessions.com/posts/2012/04/udi-soa-11th-fallacy/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/04/udi-soa-11th-fallacy/</guid>
+      <pubDate>Sun, 29 Apr 2012 23:00:12 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Most of the other fallacies of distributed computing are well documented elsewhere.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Most of the other fallacies of distributed computing are well documented elsewhere.<a id="more"></a>  </p>
+<p>The last three fallacies were penned by Ted Neward of both Java and .NET fame. The first two can be found in his magnum opus Effective Enterprise Java, and the last in a blog post lamenting that he wished it had made the book. The very last one is of particular interest because it is the most controversial: Business Logic Can and Should be Centralized.</p>
+<p>When Ted discussed the 11th fallacy, he’s talking about the fact that business logic is going to necessarily be distributed in a distributed system – that we will need to enforce the same rules on clients, on servers, in databases. As Ted states, this is a hard one to swallow, because we believe in DRY (Don’t repeat yourself). We want to write per the <a href="http://c2.com/cgi/wiki?OnceAndOnlyOnce" target="_blank" rel="external">Once and Only Once Rule</a>. We feel like bad programmers when we repeat ourselves.</p>
+<p>What do we do when in one ear the Pragmatic Programmers are whispering “don’t repeat yourself!” and in the other ear “Coupling is bad!” How do we not repeat ourselves and keep a decoupled architecture? If we write it only once, we will be coupled to it everywhere it is used. But decentralize our rules, we have repeated ourselves. How can we resolve such things?</p>
+<p>Udi has a quote I feel is brilliant.</p>
+<blockquote>
+<p>When two principles are pushing in opposite directions, some underlying assumption is wrong. Often the word the is the culprit – Udi Dahan</p>
+</blockquote>
+<p>If loose coupling and DRY are pushing in opposite directions what assumption is wrong?</p>
+<p>At this point we have to ask – why are we are striving for DRY in business rules anyway (aside from the fact some old guys with beards told us it was the right thing to do)? Udi points out it’s not making changes in repeated code that is hard, it’s finding all the places where changes need to be made!</p>
+<p>So what assumption is wrong? Where is the word “the” causing us pain? Udi offers that we have one “the view” of an architecture. Instead of trying to centralize business logic with DRY – why not have multiple views of your architecture? What if we tagged each requirement so that with a simple GREP query we could easily find everything related to a business rule and make a code change? Giving credit where due, Udi attributes this idea to Philip Kruchten’s paper <a href="http://www.cs.ubc.ca/~gregor/teaching/papers/4+1view-architecture.pdf" target="_blank" rel="external">Architectural Blueprints—The “4+1” View Model of Software</a>.</p>
+<p>Does this smack at the extreme programming view that “the code” is the only model? Possibly. I defer the reader to Eric Evan’s work in Domain Driven Design where he says “Documents should work for a living.” I can’t think of a better way for user stories / requirements to stay alive and relevant than to have them cross reference directly with the actual code that implements them in a “requirement view” of our architecture.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/04/udi-soa-11th-fallacy/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>What&#39;s wrong with RPC?</title>
+      <link>http://www.codeconfessions.com/posts/2012/04/udi-soa-whats-wrong-with-rpc/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/04/udi-soa-whats-wrong-with-rpc/</guid>
+      <pubDate>Tue, 10 Apr 2012 22:56:27 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;In my last post I lamented the pain felt applying object orientation to distributed architectures
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>In my last post I lamented the pain felt applying object orientation to distributed architectures<a id="more"></a>  but I didn’t talk about why. To understand this, it helps to look back to Peter Deutch’s fallacies of distributed computing (If you want to learn more about these fallacies <a href="http://www.rgoarchitects.com/Files/fallacies.pdf" target="_blank" rel="external">go here</a>)</p>
+<p>One of the first systems I developed was a wireless restaurant point of sale system. A key feature was waitstaff could send customer orders wirelessly with handheld devices to a backend server. This sounds like a simple enough system to build. And it is at development time with a device emulator running on the same machine as the application server. With this setup, it’s easy to fall into a trap. We code oblivious to Peter’s first fallacy, that the <strong>network is reliable</strong>, because we abstracted the network away somewhere. All is fine until deployment, because that is when Microwave ovens disrupt 802.11B devices, staff trip over cords and send PCs or switches offline and phone systems go in that compete with your wireless signal. That is when impenetrable cinderblock walls and the electric surges of heavy machinery wreak havoc on your network.</p>
+<p>RPC (remote procedure call) technologies make the situation worse. Network is down? You get a timeout error. Want to retry? Implement it yourself.</p>
+<p>I did that with the restaurant system. I devised retry logic so that waitstaff could move back into the wireless range and try sending the order again if it failed the first time. But this introduces another problem with RPC over unreliable networks. With RPC there are two distinct outcomes for a timeout. First, the RPC call may have never reached the server. In the case of our restaurant system, we would have hungry, angry customers unless the system retries to send the order. But what about the second outcome? What if the order did reach the server and the timeout occurred on the way back? If this is the case, and the waitstaff retries, the order is received twice. This means we requested double food (unless our services are <a href="http://en.wikipedia.org/wiki/Idempotence" target="_blank" rel="external">idempotent</a>)!</p>
+<p>So is RPC over networks always bad? Actually many successful, distributed systems have been built on RPC. To say “the network is unreliable” is too binary. Reliability is a range with my scary restaurant network on one side and mission critical no single point of failure networks on the other. The abstractions afforded by RPC are acceptable for many non mission critical systems. Yet if there is another pattern, another abstraction that’s not much more complicated and does bring more reliability, shouldn’t we look to it?</p>
+<p>When it has to be as reliable as possible, there are two choices. First, you can implement socket level communication. This means doing the connects, retries, and reconnects yourself. I’ve done that when implementing clients for mainframe messaging. It’s not terribly fun but it is effective. Second, you can use a reliable messaging pattern to smooth out the inherently unreliable network. In a future post I’ll talk about what patterns are applicable.</p>
+<p>In the end, there is no 100% reliability once you introduce a network. This is clearly illustrated by the <a href="https://en.wikipedia.org/wiki/Two_Generals%27_Problem" target="_blank" rel="external">Two Generals Problem</a>. But that doesn’t mean we should throw up our hands. It means we need to do what we’ve always done as IT professionals – make good tradeoffs and think deeply about when and where we need specific nonfunctional requirements such as levels of reliabiity.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/04/udi-soa-whats-wrong-with-rpc/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>We use the Wrong Patterns</title>
+      <link>http://www.codeconfessions.com/posts/2012/04/udi-soa-we-use-the-wrong-patterns/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/04/udi-soa-we-use-the-wrong-patterns/</guid>
+      <pubDate>Thu, 05 Apr 2012 22:55:05 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;One of the pronounced themes of Udi’s advanced SOA course is that we have misapplied familiar software patterns
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>One of the pronounced themes of Udi’s advanced SOA course is that we have misapplied familiar software patterns<a id="more"></a>  in an attempt to abstract away the complexities of distributed computing.</p>
+<p>For a long time it was reasonably hard to do application level computing over a network. Even simple client /server operations required programming at the socket level. Yet application developers being who we are, we wanted abstractions. We had business needs to address. We didn’t want to get down into the weeds just to get computers talking to each other.</p>
+<p>As object oriented programming was such a singular, dominant paradigm in the 80’s and early 90’s, object oriented solutions were developed to the network problem. So entered CORBA and DCOM. These technologies should have showed us once and for all how badly object orientation maps to distributed computing. But instead of realizing that the pattern was mismatched to the needs of distributed computing, the implementation and interpretation were blamed.</p>
+<p>The rapid growth of the Internet exacerbated the problem as software vendors scrambled to create tools that met existing customer mental models while answering the question of how we were going to get all of this networking stuff to work. It was in this period that .NET became the premier tool for writing business code on the Windows platform.  With it came the promise of “web services”.</p>
+<p>If you are old enough to remember .NET’s launch, it was about web services. The plan was we would give up the component based VB6 application development model and move our apps to the web. Component vendors would become web service vendors, billing us per request. For example, instead of adding a spell checking component to our applications, we would send our documents into the ether for a remote spell check by a vendor, paying a mere penny or so for the privilege.</p>
+<p>Inspired, us developers started building applications using web services and our trusty three tiers. It became a “best practice” to not let a web application UI (sitting on a server) talk to a database (often sitting on the same server) without going through a web service business layer (you got it.. on the same server). Developers were told that a tiered architecture was a decoupled architecture and that a decoupled architectures would be more manageable, more agile, and let us scale as future needs dictated.</p>
+<p>So it wasn’t until we started moving these services to different physical boxes, often even in the same subnet, that the complexity of distributed computing suddenly came to bare. We had been fooling ourselves in our development environments and in our simple deployments -with all these things on the same box it was just interprocess object oriented computing.</p>
+<p>Unlike in CORBA and DCOM where the pain was felt immediately and profoundly, object oriented web service architectures delayed the pain until we really needed the architecture to work.</p>
+<p>The problem is object orientation just doesn’t map well to distributed computing. Udi points out that the Gang of Four book, oft thought of as the most important pattern text, was about writing a Word Processor – a single process mammoth application.</p>
+<p>The irony is as early as 1994 we should have known knew better. It was then that Peter Deutch drafted his assumptions on the fallacies of network computing. It states clearly the errors traditional application developers will make moving to a network model. So it is doubly sad that these became adopted by vendors as best practices. Note: Udi covers these fallacies in depth in his course.</p>
+<p>Udi calls himself “The Software Simplist”. Prior to taking his course, I had a debate with a friend over how wrong I thought that was given how complex his architecture seems to be. Post the course, I think Einstein’s paraphrased quote is appropriate. “Everything should be made as simple as possible, but no simpler.” If our object oriented patterns are not up to tackling distributed computing, then we need something more complex.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/04/udi-soa-we-use-the-wrong-patterns/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Udi Dahan’s SOA Course</title>
+      <link>http://www.codeconfessions.com/posts/2012/04/udi-soa-course/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/04/udi-soa-course/</guid>
+      <pubDate>Wed, 04 Apr 2012 22:52:25 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I had the pleasure of attending &lt;a href=&quot;http://www.udidahan.com/training/&quot;&gt;Udi Dahan’s Advanced SOA course&lt;/a&gt; this winter.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I had the pleasure of attending <a href="http://www.udidahan.com/training/" target="_blank" rel="external">Udi Dahan’s Advanced SOA course</a> this winter. <a id="more"></a> If you aren’t familiar with Udi, he’s an experienced software architect, frequent blogger, the co-creator of the CQRS pattern, and also the originator of NServiceBus. For years he has been blogging on topics ranging from DDD to SOA to the benefits of message based architectures over traditional RPC.</p>
+<p>Udi’s SOA course is 5 jam pact days during which he works tirelessly for his students, plowing the entire 8 hours each day on his feet. Roughly half of the the course is spent massaging existing assumptions so that students can approach SOA with a new perspective. The other half is spent explaining techniques born out of years of consulting and answering a bevy of questions along the way.</p>
+<p>When I returned to work on Monday my coworkers asked me what I had learned. I realized I had no idea where to start. This is a common problem experienced by Udi’s graduates. It’s tough to share when back with the tribe. Part of this is because Udi has his own specific definitions for widely used terms like “service” and “domain model”. More though, Udi’s course is taught by Udi and lasts for five days because it takes that time and his experience to bake in these concepts. While he lets students have access to his voluminous slide deck, out of context of the talk they tend to generate confusion.</p>
+<p>The problem is how to “scale” Udi.  There is some good news. Recently Udi has made available his entire SOA course as a <a href="https://www.flickrocket.com/eshop/Catalog2.aspx?CID=2956&amp;Theme=32&amp;SessionID=d8dee9f7-8235-4ddf-9d0e-2ed8293ad616" target="_blank" rel="external">series of purchasable videos</a>. I haven’t had the opportunity to watch them; For an individual consultant they are a bit pricey, but for a corporation they are well priced and solves the knowledge transfer problem.</p>
+<p>It’s been four months and I can feel the knowledge decay starting so I have decided to blog about what I have gleaned from it. I hope this series of posts makes you interested in Udi and in his work. Every serious architect in the .NET space should take his course not even if – but especially if you have been building systems for decades.  These posts will only be my interpretation. Go to his course or purchase his videos for the real deal.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/04/udi-soa-course/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>No SQL Talk</title>
+      <link>http://www.codeconfessions.com/posts/2012/04/no-sql-slides/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/04/no-sql-slides/</guid>
+      <pubDate>Sun, 01 Apr 2012 22:46:04 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;This morning I explored the zoo that is No SQL with some savvy college kids at SMU.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>This morning I explored the zoo that is No SQL with some savvy college kids at SMU.<a id="more"></a>  I’m always impressed with the talent at SMU and love the opportunity to visit their beautiful campus. No SQL is a fascinating topic. It and what it often supports – “Big Data” – are going to be two of the most important technologies of the next decade as the IPO of Splunk makes clear.</p>
+<p>Organizations that get it and invest in No SQL will gain advantages in agility and insight. The challenge will be convincing IT professionals and architects to embrace No SQL solutions after nearly half a century of only relational thought processes.</p>
+<p>I like to be where the early innovators are because that’s when it’s fun. For Big Data and NO SQL, it’s the wild west right now.</p>
+<p><a href="http://www.slideshare.net/JustinWeinberg/smu-no-sql-talk" target="_blank" rel="external">Giddyup for the slides!</a></p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/04/no-sql-slides/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>VNext Dallas</title>
+      <link>http://www.codeconfessions.com/posts/2012/03/vnext-dallas/</link>
+      <guid>http://www.codeconfessions.com/posts/2012/03/vnext-dallas/</guid>
+      <pubDate>Sat, 31 Mar 2012 22:44:26 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;Wondering what happened to NT Silverlight? It’s now VNext Dallas!
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>Wondering what happened to NT Silverlight? It’s now VNext Dallas! <a id="more"></a> Our goal is to delve into client side development  topics relevant today such as HTML 5, XAML, and Javascript. Our first three meetings went deep on Javascript, iOS and Android, and Windows 8. Our next few meetings will include Kinect for Windows development and JQuery and JavaScript fundamentals.</p>
+<p>While a nascent organization, I expect Microsoft’s evolving client side story will make this group critical to existing .NET developers. We meet the fourth Thursday of each month at Improving Enterprises from 6:00 PM to 9:00 PM. If you are interested please visit us at www.VNextDallas.org.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2012/03/vnext-dallas/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Craft of Coding Talk Slides</title>
+      <link>http://www.codeconfessions.com/posts/2011/10/craft-of-coding/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/10/craft-of-coding/</guid>
+      <pubDate>Sun, 23 Oct 2011 22:35:54 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;On the 17th of October I presented a talk at SMU to a group of computer science students.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>On the 17th of October I presented a talk at SMU to a group of computer science students.<a id="more"></a> </p>
+<p>Here’s my abstract:</p>
+<p>This presentation will show how fundamental computer science concepts such as data structures, recursion, object orientation, and runtime analysis are not only useful beyond the classroom today but also essential skills for tomorrow’s software engineers. I’ll begin by demonstrating real world code where these fundamental concepts come into play. I’ll then show how a robust understanding of fundamentals can mean the difference between an elegant solution and a hack. I’ll conclude by discussing how tomorrow’s reality of many cores, functional languages, massive scalability, and the coming cloud revolution necessitate a solid computer science foundation.</p>
+<p>The value of a college education to a career in software engineering has always been questioned. The venerable Robert Martin recently tweeted:</p>
+<blockquote>
+<p>“It doesn’t take a college degree to be a programmer.  Programming is a trade that can be learned through apprenticeship and mentoring.” – Robert Martin</p>
+</blockquote>
+<p>Bob is being narrow; Programming is a broad concept.  Designing compilers, operating systems, embedded systems, circuits and DSLs does require a foundation of computer science. While you can succeed in object oriented business programming without a college degree, you will appreciate knowledge of fundamentals when you step outside this comfort zone.  Yes, you can succeed in today’s 4GL languages without a degree ,but you will be at a disadvantage each time the industry shifts.</p>
+<p>Joel Spolsky offers the following on the subject of fundamentals:</p>
+<blockquote>
+<p>“I want my ER doctor to understand anatomy, even if all she has to do is put the computerized defibrillator nodes on my chest and push the big red button, and I want programmers to know programming down to the CPU level, even if Ruby on Rails does read your mind and build a complete Web 2.0 social collaborative networking site for you with three clicks of the mouse.” – Joel Spolsky</p>
+</blockquote>
+<p>I couldn’t agree more.</p>
+<p><a href="http://www.slideshare.net/JustinWeinberg/craft-of-coding" target="_blank" rel="external">Slides available here</a></p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/10/craft-of-coding/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Kinect Talk Code and Slides</title>
+      <link>http://www.codeconfessions.com/posts/2011/10/kinect-slides-and-code/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/10/kinect-slides-and-code/</guid>
+      <pubDate>Sun, 09 Oct 2011 22:28:42 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I had the pleasure of presenting the expanded version of my “Connect with your Kinect” presentation at both the C# Special Interest Group and the Ft Worth .NET User Group this month.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I had the pleasure of presenting the expanded version of my “Connect with your Kinect” presentation at both the C# Special Interest Group and the Ft Worth .NET User Group this month.<a id="more"></a>    I’ve really been enjoying both speaking on Kinect and developing with the peripheral.  I promised code and slides so here they are!</p>
+<p>The code can be pulled from BitBucket <a href="https://bitbucket.org/codeconfessions/kinect-examples/" target="_blank" rel="external">here</a>. Slides are available <a href="http://www.slideshare.net/JustinWeinberg/connect-with-your-kinect" target="_blank" rel="external">here</a></p>
+<p>I also just learned I get to do this one more time at SMU. The SMU Computer Science Department has invited me to give the talk again on Oct 27th to students.  The talk is open to everyone so if you are interested in attending look <a href="https://www.smu.edu/Lyle/Centers/HartCenter/Events" target="_blank" rel="external">here</a> for more information later this month.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/10/kinect-slides-and-code/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Speaking at Dallas Techfest</title>
+      <link>http://www.codeconfessions.com/posts/2011/08/dallas-techfest/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/08/dallas-techfest/</guid>
+      <pubDate>Sun, 21 Aug 2011 22:27:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I had a lot of fun at Dallas TechFest this year as both a speaker and a participant.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I had a lot of fun at Dallas TechFest this year as both a speaker and a participant. <a id="more"></a>  This was my first year to speak at Dallas TechFest and I was both humbled and honored to be selected.  Much thanks to the event organizers for putting together such an excellent event.</p>
+<p>I find Techfest exciting for many reasons, one of which is that it takes place at the <a href="http://www.utdallas.edu/" target="_blank" rel="external">University of Texas at Dallas</a>.   Due to this my audience was a mix of personalities from freshman students to PhDs to professional developers. </p>
+<p>The code focused talk I gave was entitled “Connect with your Kinect”.  On a technical level the talk demoed broad API functionality found in the beta SDK of Microsoft Kinect.  On a deeper level I sought to inspire developers on the potential of this device and get their interests perked.</p>
+<p>I was happy with the reaction to this talk.  I think the audience left enthused and I felt some real energy in the room.</p>
+<p>I promised to post some code here, but I have been asked to expand the talk and give it again at the Dallas C# SIG group in about two weeks.  Because of this, I’m going to do some code cleanup and post it shortly there after.  Stay tuned!</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/08/dallas-techfest/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Silverlight Testing Talk</title>
+      <link>http://www.codeconfessions.com/posts/2011/06/silverlight-testing-talk/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/06/silverlight-testing-talk/</guid>
+      <pubDate>Sat, 25 Jun 2011 22:24:24 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;A little over two months ago I gave I gave a talk at the North Texas Silverlight User Group on Silverlight testing.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>A little over two months ago I gave I gave a talk at the North Texas Silverlight User Group on Silverlight testing.<a id="more"></a> </p>
+<p>The talk divided into two sections.  The first part was about unit testing Silverlight.  I started out with some hard to test code and worked it into easier to test code.  I also demonstrated the Silverlight unit test runner. The second part was about automating functional testing using <a href="http://www.telerik.com/teststudio" target="_blank" rel="external">Telerik’s WebUI Test Studio</a>.  Everyone was impressed by Telerik’s tooling and their automated testing experience.</p>
+<p>Shawn Weisfeld, one of our most stalwart community members, was there and recorded the talk and has made it available on his recently launched media site <a href="http://usergroup.tv/" target="_blank" rel="external">usergroup.tv</a>.  If you are interested you can check it out <a href="http://www.usergroup.tv/videos/silverlight-testing-extravaganza" target="_blank" rel="external">here</a>.   This was one of my favorite meetings we’ve had because people really got involved in the discussion of testing.  FYI this lead to some long pauses in the video, so be ready to skip past those.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/06/silverlight-testing-talk/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>C# Influences Talk</title>
+      <link>http://www.codeconfessions.com/posts/2011/04/c-sharp-influences-talk/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/04/c-sharp-influences-talk/</guid>
+      <pubDate>Sat, 09 Apr 2011 22:18:32 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;This morning I gave a talk at the North Texas PC user group on influences to C#.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>This morning I gave a talk at the North Texas PC user group on influences to C#.<a id="more"></a>   This group is steadily going through the teach yourself C# in 24 hours book.  This talk gave a glimpse of things to come for that group.</p>
+<p>It’s hard to believe that C# and the .NET framework are decagenerians.  Over that time C# has been influences by  academia, innovations in other languages, and the evolution of hardware platforms.  This has made C# a very big language with lots of varied paradigms at work.</p>
+<p>This talk discusses some of those influences and ties them back to specific language features and innovations.</p>
+<p><a href="https://gist.github.com/justinweinberg/8bed4d1401957bc909d7666ab6384b39#file-c-influences-talk-source" target="_blank" rel="external">Get the code here</a></p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/04/c-sharp-influences-talk/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>From PRISM to Caliburn Micro</title>
+      <link>http://www.codeconfessions.com/posts/2011/03/from-prism-to-caliburn-micro/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/03/from-prism-to-caliburn-micro/</guid>
+      <pubDate>Tue, 08 Mar 2011 23:13:40 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;My team is in the process of transitioning our Silverlight development from Prism to Caliburn Micro.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>My team is in the process of transitioning our Silverlight development from Prism to Caliburn Micro. <a id="more"></a>  I’ve had questions about how common PRISM scenarios map to Caliburn Micro.</p>
+<p>One feature found in most MVVM frameworks is an <a href="http://martinfowler.com/eaaDev/EventAggregator.html" target="_blank" rel="external">Event Aggregator</a>.  Martin Fowler describes this in his “Further Patterns of Enterprise Architecture”.  According to Fowler, the purpose of the Event Aggregator is to simplify event registration by “channeling events from multiple objects into a single object”.</p>
+<p>Event Aggregators are most relevant to rich client development, where multiple bits of a composite interface need to share common state.  For example, a toolbar, a status bar, a screen, and a notification icon may all need to be synchronized with some common theme that cross cuts the view model approach to state management.  Event Aggregators simplify registration and publication of events between objects to some subset of the M * N unique registrations that would be required otherwise.</p>
+<h1 id="Event-Aggregation-in-PRISM"><a href="#Event-Aggregation-in-PRISM" class="headerlink" title="Event Aggregation in PRISM"></a>Event Aggregation in PRISM</h1><p>In Prism, an event is declare by inheriting from a CompositePresentationEvent<t> where T is the message payload.</t></p>
+<pre><code class="language-csharp">public class FooEvent : CompositePresentationEvent&lt;FooEventArgs&gt; { }
+</code></pre>
+<p>The actual aggregator is called an EventAggregator.  It has a single method, GetEvent<t> which gets an instance of the event type T.</t></p>
+<p>Firing an aggregate event from PRISM is simple.</p>
+<pre><code class="language-csharp">myEventAggregator.GetEvent&lt;FooEvent&gt;().Publish(fooEventArgs);
+</code></pre>
+<p>Subscribing is another matter entirely.  Subscribing has up to five parameters including whether to hold a strong or weak reference to the subscriber, which thread to call subscribers on, a filter to determine if the subscriber gets the event, and the delegate to invoke.</p>
+<p>The defaults work for most situations and the overloads may create problems. Supporting both strong and weak referencing can lead to confusion.</p>
+<pre><code class="language-csharp">myEventAggregator.GetEvent&lt;FooEvent&gt;().Subscribe(OnFoo);
+</code></pre>
+<h1 id="Event-Aggregation-in-Caliburn-Micro"><a href="#Event-Aggregation-in-Caliburn-Micro" class="headerlink" title="Event Aggregation in Caliburn Micro"></a>Event Aggregation in Caliburn Micro</h1><p>Event Aggregation in Caliburn Micro is simple.  In Caliburn Micro, events are plain old CLR objects (poCo).  The event argument payload, if needed, is declared in the event as one or more simple properties.</p>
+<pre><code class="language-csharp">public class FooEvent { public string myProp; }
+</code></pre>
+<p>To subscribe events of interest, subscribers implements IHandle<t> where T is the event of interest.  The actual subscription wiring occurs by having interest subscribers pass themselves as an argument to the event aggregator’s subscribe method:</t></p>
+<pre><code class="language-csharp">    public class Foo : IHandle&lt;FooEvent&gt;
+    {
+        private IEventAggregator myEventAggregator;
+
+        public Foo()
+        {
+            myEventAggregator.Subscribe(this);
+        }
+
+
+        public void Handle(FooEvent message)
+        {
+
+        }
+    }
+</code></pre>
+<p>This <code>IHandle&lt;T&gt;</code> approach makes explicit and clear at a glance the relationship between interested subscribers and their subscribed events.</p>
+<p>Publication is very straightforward:</p>
+<pre><code class="language-csharp">myEventAggregator.Publish&lt;FooEvent&gt;(new FooEvent());
+</code></pre>
+<p>Caliburn Micro’s publish model isn’t as powerful as its PRISM counter part.  Yet it prevents you from shooting yourself in the foot with good, opinionated defaults;  It holds weak references in the event aggregator and  executes events on the UI thread.</p>
+<p>While some PRISM event scenarios cannot be implemented using the event aggregator in Caliburn Micro, this lack of choice isn’t a deficit.  It welcomes us all into the “pit of success.”</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/03/from-prism-to-caliburn-micro/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>SMU Career Talk Slides</title>
+      <link>http://www.codeconfessions.com/posts/2011/03/smu-career-talk/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/03/smu-career-talk/</guid>
+      <pubDate>Mon, 07 Mar 2011 22:12:59 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;A couple of students asked me to post slides from my SMU presentation on careers in consulting. My slides tend to be more visual than text so I thought I’d break it down a bit as well.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>A couple of students asked me to post slides from my SMU presentation on careers in consulting. My slides tend to be more visual than text so I thought I’d break it down a bit as well.<a id="more"></a></p>
+<p>I had two purposes to this talk.  Chris Harper (HR Manager at Sogeti) asked me to talk about the Velocity project and the work we did at Broadlane from a technical perspective to explain what a consulting project looks like.  I also wanted to try and convey some of the benefits I get from being a consultant and working at Sogeti.</p>
+<p>Velocity was an excellent project built by an extraordinary team.  Not every project is going to be a Velocity.  Yet the more agile methods taking hold in the industry, the more Velocities I think we’ll all have a chance to participate in.</p>
+<p>The first couple slides show Velocity.  I then moved on to talk a bit about agile methods.  Then I discussed some of the core technologies that made up Velocity.  I conclude with some reasons to look at consulting as a career and some book recommendations.</p>
+<p>I enjoyed giving this talk and meeting some of the impressive teachers and students at SMU.</p>
+<p>Here are the <a href="http://www.slideshare.net/JustinWeinberg/smu-careers-in-consulting-talk" target="_blank" rel="external">slides</a></p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/03/smu-career-talk/#disqus_thread</comments>
+    </item>
+    
+    <item>
+      <title>Database Archaeology with Visual Studio</title>
+      <link>http://www.codeconfessions.com/posts/2011/03/vs-database-projects/</link>
+      <guid>http://www.codeconfessions.com/posts/2011/03/vs-database-projects/</guid>
+      <pubDate>Tue, 01 Mar 2011 23:01:30 GMT</pubDate>
+      <description>
+      
+        &lt;p&gt;I have an existing database project I’m working with from around 2002.
+      
+      </description>
+      
+      <content:encoded><![CDATA[<p>I have an existing database project I’m working with from around 2002. <a id="more"></a> The database is for a restaurant point of sale system I wrote called BravoPOS.  One of my original customers (ok.. my only customer) is now opening another restaurant and is interested in deploying BravoPOS at this location also.</p>
+<p>The system has been running fine since 2002. But with the new restaurant, I’ll be maintaining two, maybe even three or four systems if my restaurant point of sale monopoly takes off!</p>
+<p>This is going to introduce some complexity.</p>
+<p>At the moment there is no “official” copy of the database save what’s on the server at the restaurant.  If I ever had a large POS customer base, I would absolutely need an easy way to maintain multiple versions of the database.  I need to be able to roll forward and backward and I want to know at what point of time and for which deployments a specific schema of the database applies.</p>
+<p>Second, I’ve changed my mind on a couple things and would like to rename or “refactor” them without breaking my existing installation.  I was one of those guys who in 2002 applied Hungarian notation to my database. I prefaced every table with “tb” and every string column with ‘s’, stored procedures with usp.  I would like to simplify things.</p>
+<p>Rather than abandon the old system, I want to gracefully change these variables without causing a mistake.</p>
+<h1 id="There’s-a-bigger-picture-too"><a href="#There’s-a-bigger-picture-too" class="headerlink" title="There’s a bigger picture too"></a>There’s a bigger picture too</h1><p>Database pain extends beyond my self inflicted side project into my real job where I work on an agile team.  Due in part to the company’s culture, our projects have a differentiation between “those who code” (devs) and “those who do databases” (BI). This leads to a couple pain points where BI meets dev.</p>
+<p>There is pain when keeping BI in sync with the project’s version control. Even with the most disciplined of BI resources, databases are hard to correctly version. Versioning is done with script files and checking those scripts into source control.  It’s easy to forget to keep a script up to date.</p>
+<p>Second, there’s pain when planning schema migration from the developer state to the deployment state. Even if you have a good versioning system, there’s no guarantee that someone hasn’t made optimizations to the production database. I would expect most admins are actively changing the production database in some way for performance.</p>
+<p>Finally, there’s the issue of unit testing. Developer resources are well versed in the benefits of unit testing, but unit testing at the database level is typically not done. Since developer unit tests should not touch the database, short of an integration test how do you validate the expected behavior of the database?</p>
+<h1 id="Data-Dude-to-the-Rescue"><a href="#Data-Dude-to-the-Rescue" class="headerlink" title="Data Dude to the Rescue"></a>Data Dude to the Rescue</h1><p>The Visual Studio 2010 SQL Server Database Project type or as everyone outside of Microsoft’s marketing arm calls it “the data dude” can help ease some of this pain.  It’s available if you have access to the Professional or greater SKU of Visual Studio.</p>
+<p>To start with, I recommend using the wizard when creating a new database project:</p>
+<p><img src="New-Project-3.png" alt="New-Project-3.png"></p>
+<p>This will make important an existing database schema a breeze.  Once your done, open the Schema view to see everything data dude has created for you.  Oh, and check it into source control!</p>
+<h1 id="Refactoring-in-your-database"><a href="#Refactoring-in-your-database" class="headerlink" title="Refactoring in your database"></a>Refactoring in your database</h1><p>Want to rename a table or a column?  You’ll be tempted to double click on a schema item and start renaming it like you would in SQL Server.  Don’t!  You want to use the built in refactoring commands.  With the exception of dynamic SQL and any external dependencies it will kindly take care of renaming detected dependencies for you.</p>
+<p><img src="Rename-dbo.tbDepartments-2.png" alt="Rename-dbo.tbDepartments-2.png"></p>
+<p>Here I’m renaming a table from tbDepartments to Departments.  Notice the preview changes button.  This let’s you see the affected objects and what will change.</p>
+<p><img src="Preview-Changes-Rename.png" alt="Preview-Changes-Rename.png"></p>
+<p>The number of affected items above is a good reason why to use a refactoring tool like data dude.  Departments are used in lots of reporting procedures.  Changing this by hand could be messy and error prone.</p>
+<h1 id="Comparing-Schemas"><a href="#Comparing-Schemas" class="headerlink" title="Comparing Schemas"></a>Comparing Schemas</h1><p>Using data dude, you can compare schemas between database projects or compare your current project to a database.  It will give you an idea of what will need to be done to get one database to match the other.  There’s an issue though if you look at what it wants to do to my Departments table:</p>
+<p><img src="badmojo.png" alt="badmojo.png"></p>
+<p>According to Microsoft on a thread <a href="http://social.msdn.microsoft.com/Forums/en/vstsdb/thread/fd2c3d02-8792-4d58-b1cb-0c804a1142de" target="_blank" rel="external">here</a> schema compare doesn’t understand the “refactor log” which it uses at deployment time. Because of this I don’t focus on schema view except as a diff tool and I don’t use scripts from it.</p>
+<h1 id="Getting-a-real-schema-diff"><a href="#Getting-a-real-schema-diff" class="headerlink" title="Getting a real schema diff"></a>Getting a real schema diff</h1><p>When your are interested in getting some useful scripts out of data dude, you will need to use the deploy option.  By default deploy “deploys” a SQL script file to a bin that you can run at your leisure.</p>
+<p>There’s something really important to understand about the deployment option.  Whether your script is created to generate a new database or to generate an update script to an existing database depends on  <strong>on what you have specified as your deployment target under deployment options</strong>.  To get a real diff between your deployment target and your refactoring, you need to specify it as your deployment target in the project properties Deployment tab:</p>
+<p><img src="Untitled-8.png" alt="Untitled-8.png"></p>
+<h2 id="Unit-Testing…-databases"><a href="#Unit-Testing…-databases" class="headerlink" title="Unit Testing… databases?"></a>Unit Testing… databases?</h2><p>The term unit test is getting overloaded and its meaning ambiguous.  My definition is that a unit test is a small bit of code whose purpose is to validate that the behavior of some other bit of code is behaving as designed.  This means that the result of a unit test must be deterministic, not <a href="http://en.wikipedia.org/wiki/Stochastic" target="_blank" rel="external">stochastic</a>.</p>
+<p>This is difficult to guarantee with a database since data changes the output of functions (stored procedures).  To make a database unit testable, you must make it predictable.  Data dude can help.  It allows you to create a database on demand, populate it with test data and execute a series of unit tests against it</p>
+<p>You can get all the gritty details on how to setup unit testing for databases <a href="http://msdn.microsoft.com/en-us/library/bb381703(v=vs.80" target="_blank" rel="external">here</a>.aspx).  What I thought was exceptional was the actual designer for creating database unit tests shown below:</p>
+<p><img src="Untitled-5.png" alt="Untitled-5.png"></p>
+<p>The T-SQL to be executed goes into the box at the top.  Test conditions are created at the bottom.  The built in conditions are:</p>
+<ul>
+<li>Data Checksum:  Verify that a hash of an output set matches a previously generated hash. You get a little window to execute your SQL from which computes a checksum for you.  This then goes into the equals condition for the test.</li>
+<li>Empty ResultSet  Verify no rows returned</li>
+<li>Not Empty Result set: Verify some rows returned.</li>
+<li>Row Count:  Verify that X rows are returned where X is the number of rows.</li>
+<li>Execution Time:  Must execute in less than hh:mm:ss.</li>
+<li>Inconclusive: The default condition</li>
+<li>Schema Comparison: Similar to a checksum but for schema.  Allows you to execute a bit of SQL and set that as the target schema to match as a result set’s schema.</li>
+<li>Scalar value:  Verify that a scalar value in a specific column / row matches another value.  If you want to test a scalar such as a return value or output value, you will need to put it into a Select as shown in the Select @RC as RC example.</li>
+</ul>
+<p>If the built in conditions do not meet your needs, there is extensibility support to create your own conditions.  More on that <a href="http://msdn.microsoft.com/en-us/library/aa833409.aspx" target="_blank" rel="external">here</a>.</p>
+<p>As you might guess, unit tests are configured to use MSTest.  More flexibility here would be nice.</p>
+<p>To sum up, Visual Studio SQL Server Database Projects can help manage the pain points where BI and dev come together such as with version control.  It can help teams harden database designs with unit testing.  Who knew such an awesome tool was hiding deep inside Visual Studio.</p>
+]]></content:encoded>
+      
+      <comments>http://www.codeconfessions.com/posts/2011/03/vs-database-projects/#disqus_thread</comments>
+    </item>
+    
+  </channel>
+</rss>
